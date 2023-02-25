@@ -1,0 +1,49 @@
+﻿/* Style for the toggle icon */
+.sub-menu > .nav-item > .nav-link > .arrow:before {
+    content: "\f107"; /* FontAwesome icon for the right arrow */
+    font-family: "FontAwesome";
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+ul.li {
+    padding: 10px;
+    display: block;
+    border-left: 3px solid transparent;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.sub-menu > .nav-item.open > .nav-link > .arrow:before {
+    content: "\f106"; /* FontAwesome icon for the down arrow */
+}
+
+/* Style for the sub-menu */
+.sub-menu {
+    display: none;
+    padding-left: 10px;
+}
+
+    .sub-menu > .nav-item {
+        margin: 0;
+    }
+
+        .sub-menu > .nav-item > .nav-link {
+            padding: 5px 10px;
+        }
+
+            .sub-menu > .nav-item > .nav-link:hover {
+                /*background-color: #eee;*/
+            }
+
+            .sub-menu > .nav-item > .nav-link.active {
+                /*background-color: #eee;*/
+            }
+
+        /* Show the sub-menu when the parent is active/open */
+        .sub-menu > .nav-item.active > .sub-menu {
+            display: block;
+        }
