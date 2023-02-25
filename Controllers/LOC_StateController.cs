@@ -6,7 +6,7 @@ namespace Road_Safety_Project.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View("LOC_StateList");
         }
     }
 }

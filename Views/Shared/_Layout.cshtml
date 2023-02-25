@@ -118,7 +118,8 @@
             text-decoration:none;
             list-style: none;
         ">
-                            <a href="tables.html">Location</a>
+                            <a asp-area="" asp-action="Index" asp-controller="LOC_State" class="nav-link ">Location State</a>
+
                             @* <a b-16m3bz2c4u="" href="#table-dropdown" data-toggle="collapse" class="" aria-expanded="true">
                             <i b-16m3bz2c4u="" class="zmdi zmdi-grid"></i> <span b-16m3bz2c4u="">Tables</span>
                             <small b-16m3bz2c4u="" class="badge float-right badge-light">New</small>
@@ -261,7 +262,7 @@
         <div class="clearfix"></div>
 
         <div class="content-wrapper">
-            <div class="container-fluid">
+            @*<div class="container-fluid">
 
                 <!--Start Dashboard Content-->
 
@@ -540,7 +541,12 @@
 
             </div>
             <!-- End container-fluid-->
-
+*@
+        <div class="container-fluid">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
         </div><!--End content-wrapper-->
         <!--Start Back To Top Button-->
         <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
@@ -594,11 +600,7 @@
 
     </div><!--End wrapper-->
     <!--End topbar header-->
-    @*    <div class="container">
-    <main role="main" class="pb-3">*@
-    @RenderBody()
-    @*        </main>
-    </div>*@
+  
     @*
     <footer class="border-top footer text-muted">
     <div class="container">
