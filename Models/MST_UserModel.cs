@@ -2,7 +2,7 @@
 
 namespace Road_Safety_Project.Models
 {
-    public class MST_User
+    public class MST_UserModel
     {
         public int UserID { get; set; }
         public string? Username { get; set; }

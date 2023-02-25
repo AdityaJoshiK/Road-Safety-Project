@@ -1,6 +1,6 @@
 ﻿namespace Road_Safety_Project.Models
 {
-    public class WHT_Weather
+    public class WHT_WeatherModel
     {
         public int WeatherID { get; set; }
         public DateTime WeatherDate { get; set; }

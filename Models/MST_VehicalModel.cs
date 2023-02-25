@@ -2,7 +2,7 @@
 
 namespace Road_Safety_Project.Models
 {
-    public class MST_Vehical
+    public class MST_VehicalModel
     {
         public int VehicalID { get; set; }
         public string? VehicalName { get; set; }

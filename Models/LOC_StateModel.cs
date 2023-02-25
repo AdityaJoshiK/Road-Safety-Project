@@ -1,6 +1,6 @@
 ﻿namespace Road_Safety_Project.Models
 {
-    public class LOC_State
+    public class LOC_StateModel
     {
         public int StateID { get; set; }
         public int CountryID { get; set; }
