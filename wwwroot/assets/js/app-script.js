@@ -66,27 +66,27 @@ $(function () {
 })
 
 
-	 // theme setting
-	 $(".switcher-icon").on("click", function(e) {
-        e.preventDefault();
-        $(".right-sidebar").toggleClass("right-toggled");
-    });
+	// // theme setting
+	// $(".switcher-icon").on("click", function(e) {
+ //       e.preventDefault();
+ //       $(".right-sidebar").toggleClass("right-toggled");
+ //   });
 	
-	$('#theme1').click(theme1);
-    $('#theme2').click(theme2);
-    $('#theme3').click(theme3);
-    $('#theme4').click(theme4);
-    $('#theme5').click(theme5);
-    $('#theme6').click(theme6);
-    $('#theme7').click(theme7);
-    $('#theme8').click(theme8);
-    $('#theme9').click(theme9);
-    $('#theme10').click(theme10);
-    $('#theme11').click(theme11);
-    $('#theme12').click(theme12);
-    $('#theme13').click(theme13);
-    $('#theme14').click(theme14);
-    $('#theme15').click(theme15);
+	//$('#theme1').click(theme1);
+ //   $('#theme2').click(theme2);
+ //   $('#theme3').click(theme3);
+ //   $('#theme4').click(theme4);
+ //   $('#theme5').click(theme5);
+ //   $('#theme6').click(theme6);
+ //   $('#theme7').click(theme7);
+ //   $('#theme8').click(theme8);
+ //   $('#theme9').click(theme9);
+ //   $('#theme10').click(theme10);
+ //   $('#theme11').click(theme11);
+ //   $('#theme12').click(theme12);
+ //   $('#theme13').click(theme13);
+ //   $('#theme14').click(theme14);
+ //   $('#theme15').click(theme15);
 
     function theme1() {
       $('body').attr('class', 'bg-theme bg-theme1');

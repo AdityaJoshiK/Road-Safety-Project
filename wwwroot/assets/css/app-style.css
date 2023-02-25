@@ -37,6 +37,7 @@ File: app-style
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
 
 /* General */
+
 html {
 	 font-family: 'Roboto', sans-serif;
 	-webkit-text-size-adjust: 100%;
@@ -347,7 +348,7 @@ hr {
     transition: all .3s ease;
 }
 
-.switcher-icon{
+/*.switcher-icon{
 	width: 40px;
     height: 40px;
 	line-height:40px;
@@ -375,7 +376,7 @@ hr {
 }
 .right-sidebar.right-toggled .switcher-icon{
 	right: 260px;
-}
+}*/
 
 .bg-theme{
      background-size: 100% 100%;
