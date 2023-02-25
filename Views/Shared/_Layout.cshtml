@@ -27,7 +27,6 @@
     <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" />
     <!-- animate CSS-->
     <link href="~/assets/css/animate.css" rel="stylesheet" type="text/css" />
-    <link href="~/assets/css/custom.css" rel="stylesheet" type="text/css" />
     <!-- Icons CSS-->
     <link href="~/assets/css/icons.css" rel="stylesheet" type="text/css" />
     <!-- Sidebar CSS-->
@@ -85,7 +84,7 @@
             text-decoration:none;
             list-style: none;
         ">
-                            <a asp-controller="ACT_Accident" asp-action="Index">Accident</a>
+                            <a href="tables.html">Accident</a>
 
                         </li>
                         <li style="
@@ -110,65 +109,29 @@
                         ">
                             <a asp-controller="ENT_EmergencyNo" asp-action="Index">Emergency</a>
                         </li>
-                      
-        
-                            @*<a asp-area="" asp-action="Index" asp-controller="LOC_State" >Location State</a>*@
-                        <li class="nav-item" style="list-style:none;">
-                            <a href="javascript:;" class="nav-link nav-toggle">
-                                <span class="title">Location</span>
-                                <span class="arrow"></span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li class="nav-item" style="
-    margin: 10px;
-                                    display: block;
-                                    border-left: 3px solid transparent;
-                                    color: rgba(255, 255, 255, 0.65);
-                                    font-size: 15px;
-                                    text-decoration:none;
-                                    list-style: none;"
-                                    <a asp-area="" asp-action="Index" asp-controller="LOC_Country">
-                                        <span class="title">Country</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item" style="
-    margin: 10px;
-                                    display: block;
-                                    border-left: 3px solid transparent;
-                                    color: rgba(255, 255, 255, 0.65);
-                                    font-size: 15px;
-                                    text-decoration:none;
-                                    list-style: none;">
-                                    <a asp-area="" asp-action="Index" asp-controller="LOC_State">
-                                        <span class="title">State</span>
-                                    </a>
-                                </li> <li class="nav-item" style="
-                                    display: block;
-    margin: 10px;
-                                    border-left: 3px solid transparent;
-                                    color: rgba(255, 255, 255, 0.65);
-                                    font-size: 15px;
-                                    text-decoration:none;
-                                    list-style: none;">
-                                    <a asp-area="" asp-action="Index" asp-controller="LOC_Area">
-                                        <span class="title">Area</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item" class="nav-item" style="
-                                    display: block;
-    margin: 10px;
-                                    border-left: 3px solid transparent;
-                                    color: rgba(255, 255, 255, 0.65);
-                                    font-size: 15px;
-                                    text-decoration:none;
-                                    list-style: none;">
-                                    <a asp-area="" asp-action="Index" asp-controller="LOC_City">
-                                        <span class="title">City</span>
-                                    </a>
-                                </li>
-                            </ul>
+                        <a asp-area="" asp-action="Index" asp-controller="MST_Hospital">Hospital</a>
                         </li>
-
+                        <li class="mylist" style="
+                                padding     : 13px 5px 13px 15px;
+                                display: block;
+                                border-left: 3px solid transparent;
+                                color: rgba(255, 255, 255, 0.65);
+                                font-size: 15px;
+                                text-decoration:none;
+                                list-style: none;
+                            ">
+                            <a href="tables.html">Emergency</a>
+                        </li>
+                        <li class="mylist" style="
+            padding: 13px 5px 13px 15px;
+            display: block;
+            border-left: 3px solid transparent;
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 15px;
+            text-decoration:none;
+            list-style: none;
+        ">
+                            <a asp-area="" asp-action="Index" asp-controller="LOC_State" >Location State</a>
 
                             @* <a b-16m3bz2c4u="" href="#table-dropdown" data-toggle="collapse" class="" aria-expanded="true">
                             <i b-16m3bz2c4u="" class="zmdi zmdi-grid"></i> <span b-16m3bz2c4u="">Tables</span>
@@ -190,61 +153,17 @@
                             </ul>
                             *@
                         </li>
-                <li class="nav-item" style="list-style:none;">
-                    <a href="javascript:;" class="nav-link nav-toggle">
-                        <span class="title">Accident Details</span>
-                        <span class="arrow"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li class="nav-item" style="
-    margin: 10px;
-                                    display: block;
-                                    border-left: 3px solid transparent;
-                                    color: rgba(255, 255, 255, 0.65);
-                                    font-size: 15px;
-                                    text-decoration:none;
-                                    list-style: none;"
-                                    <a asp-area="" asp-action="Index" asp-controller="LOC_Country">
-                                        <span class="title">EmergencyContactType</span>
-                                    </a>
-                                </li>
-                        <li class="nav-item" style="
-                                    display: block;
-    margin: 10px;
-                                    border-left: 3px solid transparent;
-                                    color: rgba(255, 255, 255, 0.65);
-                                    font-size: 15px;
-                                    text-decoration:none;
-                                    list-style: none;">
-                            <a asp-area="" asp-action="Index" asp-controller="LOC_State">
-                                <span class="title">Hospital</span>
-                            </a>
+                        <li class="mylist" style="
+            padding: 13px 5px 13px 15px;
+            display: block;
+            border-left: 3px solid transparent;
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 15px;
+            text-decoration:none;
+            list-style: none;
+        ">
+                            <a href="tables.html">Accident Details</a>
                         </li>
-                        <li class="nav-item" class="nav-item" style="
-                                    display: block;
-    margin: 10px;
-                                    border-left: 3px solid transparent;
-                                    color: rgba(255, 255, 255, 0.65);
-                                    font-size: 15px;
-                                    text-decoration:none;
-                                    list-style: none;">
-                            <a asp-area="" asp-action="Index" asp-controller="LOC_City">
-                                <span class="title">RoadType</span>
-                            </a>
-                        </li> <li class="nav-item" class="nav-item" style="
-                                    display: block;
-    margin: 10px;
-                                    border-left: 3px solid transparent;
-                                    color: rgba(255, 255, 255, 0.65);
-                                    font-size: 15px;
-                                    text-decoration:none;
-                                    list-style: none;">
-                            <a asp-area="" asp-action="Index" asp-controller="LOC_City">
-                                <span class="title">Vehical</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
                     </ul>
                 </li>
 
@@ -727,21 +646,5 @@
 
 <!-- Index js -->
 <script src="~/assets/js/index.js"></script>
-<script>
-    // Get all the nav links that have a sub-menu
-    const navLinks = document.querySelectorAll('.nav-item .nav-link.nav-toggle');
-
-    // Loop through each nav link
-    navLinks.forEach(navLink => {
-        // Add a click event listener to the nav link
-        navLink.addEventListener('click', () => {
-            // Get the sub-menu of the nav link
-            const subMenu = navLink.nextElementSibling;
-
-            // Toggle the display style of the sub-menu
-            subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
-        });
-    });
-</script>
 
 </html>
