@@ -2,7 +2,7 @@
 
 namespace Road_Safety_Project.Models
 {
-    public class MST_RoadType
+    public class MST_RoadTypeModel
     {
         public int RoadID { get; set; }
         public string? RoadType { get; set; }
