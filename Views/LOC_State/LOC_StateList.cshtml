@@ -10,63 +10,27 @@
             <table class="table table-striped table-hover " id="sample_1">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
+                        <th>Country Name</th>
+                            <th>State Name</th>
+                            <th>State Code</th>
+                            <th>Created</th>
+                            <th>Modified</th>
+                            <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
+                        @foreach (DataRow dr in Model.Rows)
+                        {
+                        <td>@dr["CountryName"]</td>
+                                @*<td>@dr["StateID"]</td>*@
+                                <td>@dr["StateName"]</td>
+                                <td>@dr["StateCode"]</td>
+                                <td>@dr["CreationDate"]</td>
+                                <td>@dr["ModificationDate"]</td>
+                        }
                     </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </div>
