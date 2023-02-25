@@ -4,6 +4,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@using System.Data;
+@model DataTable;
+
 <h1>ACT_AccidentList</h1>
 
 <!--div:begin -- table Content-->
@@ -21,12 +24,12 @@
 </div>
 <!--div:End -- table Content-->
 <!--Begin:table Start -->
-<table>
+<table class="table table-striped table-hover " id="sample_1">
     <!-- begin:thead Start-->
     <thead>
         <!--begin:tr Start-->
         <tr>
-            <th>AccidentID</th>
+            @*<th>@dr["AccidentID"]</th>*@
             <th>AccidentDateTime</th>
             <th>AccidentDescription</th>
             <th>CauseOfAccident</th>
@@ -40,6 +43,24 @@
         <!--End:tr start -->
     </thead>
     <!-- End:thead Start-->
+
+    <tbody id="sample_1">
+        @foreach (DataRow dr in Model.Rows)
+        {
+        <tr>
+                @*<td>@dr["AccidentID"]</td>*@
+                <td>@dr["AccidentDateTime"]</td>
+                <td>@dr["AccidentDescription"]</td>
+                <td>@dr["CauseOfAccident"]</td>
+                <td>@dr["NumberOfCausalties"]</td>
+                <td>@dr["RoadType"]</td>
+                <td>@dr["HospitalName"]</td>
+                <td>@dr["VehicalName"]</td>
+                <td>@dr["CreationDate"]</td>
+                <td>@dr["ModificationDate"]</td>
+        </tr>
+        }
+    </tbody>
 </table>
 <!--End:table Start -->
 

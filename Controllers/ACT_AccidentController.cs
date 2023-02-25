@@ -7,6 +7,10 @@ namespace Road_Safety_Project.Controllers
     public class ACT_AccidentController : Controller
     {
         private IConfiguration Configuration;
+        public ACT_AccidentController(IConfiguration _configuration)
+        {
+            Configuration = _configuration;
+        }
         public IActionResult Index()
         {
             string str = this.Configuration.GetConnectionString("myConnectionString");
@@ -21,7 +25,7 @@ namespace Road_Safety_Project.Controllers
             SqlDataReader sdr = cmd.ExecuteReader();
             dt.Load(sdr);
 
-            return View("ACT_Accident",dt);
+            return View("ACT_AccidentList",dt);
         }
     }
 }
