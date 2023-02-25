@@ -3,5 +3,62 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
+@using System.Data;
+@model DataTable;
+
+
 <h1>LOC_CityList</h1>
+
+<div class="card" style="margin:20px;">
+    <div class="card-body">
+        <h5 class="card-title">LOC_Country</h5>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover " id="sample_1">
+                <thead>
+                    <tr>
+                        <th scope="col">City Name</th>
+                        <th scope="col">Country Name</th>
+                        <th scope="col">State Name</th>
+                        <th scope="col">City Code</th>
+                        <th scope="col">Creation Date</th>
+                        <th scope="col">Modification Date</th>
+                        <th scope="col" colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="sample_2">
+                    @foreach (DataRow dr in Model.Rows)
+                    {
+                        <tr>
+
+                            <td>@dr["CityName"]</td>
+                            <td>@dr["CountryName"]</td>
+                            <td>@dr["StateName"]</td>
+                            <td>@dr["CityCode"]</td>
+                            <td>@Convert.ToDateTime(dr["CreationDate"]).ToString("dd-MM-yyyy")</td>
+                            <td>@Convert.ToDateTime(dr["ModificationDate"]).ToString("dd-MM-yyyy")</td>
+
+                            <td>
+                                <form method="post" asp-controller="LOC_City" asp-action="Delete">
+                                    <input type="hidden" name="CityID" value="@Convert.ToInt32(dr["CityID"])" />
+                                    <button type="submit" class="btn btn-outline-danger" peach-gradient color-block">✘ Delete</button>
+                                </form>
+                            </td>
+                            <td>
+                                <form method="post" asp-action="Add" asp-controller="LOC_City">
+                                    <input type="hidden" name="CityID" value="@Convert.ToInt32(dr["CityID"])" />
+                                    <button type="submit" class="btn btn-primary shadow rounded-pill">✎ Edit</button>
+                                </form>
+                            </td>
+
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
 
