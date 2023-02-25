@@ -3,7 +3,7 @@ using Road_Safety_Project.Models;
 
 namespace Road_Safety_Project.Models
 {
-    public class MST_Hospital
+    public class MST_HospitalModel
     {
         public int HospitalID { get; set; }
         public string? HospitalName { get; set; }
