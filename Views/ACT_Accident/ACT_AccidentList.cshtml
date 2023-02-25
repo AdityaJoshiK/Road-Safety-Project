@@ -1,7 +1,46 @@
 ﻿
 @{
-    ViewData["Title"] = "ACT_AccidentAddEdit";
+    ViewData["Title"] = "ACT_AccidentList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>ACT_AccidentList</h1>
+
+<!--div:begin -- table Content-->
+<div class="row">
+    <!--div:begin -- table Name-->
+    <div class="col-md-10">
+        <h4>Accident List</h4>
+    </div>
+    <!--div:End -- table Name-->
+    <!--div:begin -- Add button-->
+    <div class="col-md-2">
+        <a class="btn btn-lg btn-warning pull-right">Add+</a>
+    </div>
+    <!--div:End -- Add button-->
+</div>
+<!--div:End -- table Content-->
+<!--Begin:table Start -->
+<table>
+    <!-- begin:thead Start-->
+    <thead>
+        <!--begin:tr Start-->
+        <tr>
+            <th>AccidentID</th>
+            <th>AccidentDateTime</th>
+            <th>AccidentDescription</th>
+            <th>CauseOfAccident</th>
+            <th>NumberOfCausalties</th>
+            <th>RoadID</th>
+            <th>HospitalID</th>
+            <th>VehicalID</th>
+            <th>CreationDate</th>
+            <th>ModificationDate</th>
+        </tr>
+        <!--End:tr start -->
+    </thead>
+    <!-- End:thead Start-->
+</table>
+<!--End:table Start -->
+
 
