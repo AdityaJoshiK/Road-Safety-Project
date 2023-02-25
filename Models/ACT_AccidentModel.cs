@@ -1,6 +1,6 @@
 ﻿namespace Road_Safety_Project.Models
 {
-    public class ACT_Accident
+    public class ACT_AccidentModel
     {
         public int AccidentID { get; set; }
         public DateTime AccidentDateTime { get; set; }

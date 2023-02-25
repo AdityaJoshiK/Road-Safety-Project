@@ -2,7 +2,7 @@
 
 namespace Road_Safety_Project.Models
 {
-    public class ENT_Emergency
+    public class ENT_EmergencyModel
     {
         public int EmergencyNumberID { get; set; }
         public int CountryID { get; set; }
