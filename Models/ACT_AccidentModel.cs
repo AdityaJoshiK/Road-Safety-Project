@@ -10,7 +10,7 @@
         public int RoadID { get; set; }
         public int HospitalID { get; set; }
         public int VehicalID { get; set; }
-        public DateTime CreationDate { get; set; }
-        public DateTime ModificationDate { get; set; }
+        public DateTime? CreationDate { get; set; }
+        public DateTime? ModificationDate { get; set; }
     }
 }
