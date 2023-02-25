@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "MST_HospitalList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using System.Data
+@model DataTable
+
+<div class="card" style="margin:20px;">
+    <div class="card-body">
+        <h5 class="card-title">LOC_State</h5>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover " id="sample_1">
+                <thead>
+                    <tr>
+                        <th scope="col">HospitalID</th>
+                        <th scope="col">HospitalName</th>
+                        <th scope="col">HospitalAddress</th>
+                        <th scope="col">CountryName</th>
+                        <th scope="col">StateName</th>
+                        <th scope="col">CityName</th>
+                        <th scope="col">AreaName</th>
+                        <th scope="col">HospitalMobileNo</th>
+                        <th scope="col">CreationDate</th>
+                        <th scope="col">ModificationDate</th>
+                    </tr>
+                </thead>
+                <tbody id="sample_1">
+                    @foreach (DataRow dr in Model.Rows)
+                    {
+                        <tr>
+                            <td>@dr["HospitalID"]</td>
+                            <td>@dr["HospitalName"]</td>
+                            <td>@dr["HospitalAddress"]</td>
+                            <td>@dr["CountryName"]</td>
+                            <td>@dr["StateName"]</td>
+                            <td>@dr["CityName"]</td>
+                            <td>@dr["AreaName"]</td>
+                            <td>@dr["HospitalMobileNo"]</td>
+                            <td>@Convert.ToDateTime(dr["CreationDate"])</td>
+                            <td>@Convert.ToDateTime(dr["ModificationDate"])</td>
+                           
+                            @*<td>
+                                <form method="post" asp-controller="LOC_Country" asp-action="Delete">
+                                    <input type="hidden" name="CountryID" value="@Convert.ToInt32(dr["CountryID"])" />
+                                    <button type="submit" class="btn btn-outline-danger">✘ Delete</button>
+                                </form>
+                            </td>
+                            <td>
+                                <form method="post" asp-action="Add" asp-controller="LOC_Country">
+                                    <input type="hidden" name="CountryID" value="@Convert.ToInt32(dr["CountryID"])" />
+                                    <button type="submit" class="btn btn-primary shadow rounded-pill">✎ Edit</button>
+                                </form>
+
+                            </td>*@
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

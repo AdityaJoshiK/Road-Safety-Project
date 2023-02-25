@@ -26,6 +26,7 @@ namespace Road_Safety_Project.Controllers
             dt.Load(sdr);
 
             return View("ACT_AccidentList",dt);
+            conn.Close();
         }
     }
 }
